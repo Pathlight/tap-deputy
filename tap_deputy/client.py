@@ -19,8 +19,8 @@ class DeputyClient(object):
         self.__client_secret = config.get('client_secret')
         self.__redirect_uri = config.get('redirect_uri')
         self.__refresh_token = config.get('refresh_token')
-        self.__access_token = None
-        self.__expires_at = None
+        self.__access_token = config.get('permanent_token')
+        self.__expires_at = config.get('permanent_token_expires')
         self.__session = requests.Session()
 
     def __enter__(self):
