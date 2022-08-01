@@ -21,6 +21,8 @@ class DeputyClient(object):
         self.__refresh_token = config.get('refresh_token')
         self.__access_token = config.get('permanent_token')
         self.__expires_at = config.get('permanent_token_expires')
+        if self.__expires_at:
+            self.__expires_at = datetime.strptime(self.__expires_at, "%Y-%m-%dT%H:%M:%SZ")
         self.__session = requests.Session()
 
     def __enter__(self):

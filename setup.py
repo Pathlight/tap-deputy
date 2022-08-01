@@ -3,10 +3,10 @@
 from setuptools import setup
 
 setup(name='tap-deputy',
-      version='1.0.0',
+      version='1.0.1',
       description='Singer.io tap for extracting data from the Deputy API',
-      author='Deputy',
-      url='https://www.deputy.com',
+      author='Pathlight',
+      url='https://www.pathlight.com',
       classifiers=['Programming Language :: Python :: 3 :: Only'],
       py_modules=['tap_deputy'],
       install_requires=[

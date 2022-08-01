@@ -18,8 +18,8 @@ REQUIRED_CONFIG_KEYS = [
     'domain',
     'client_id',
     'client_secret',
-    'redirect_uri',
-    'refresh_token'
+    # 'redirect_uri',
+    # 'refresh_token'
 ]
 
 def do_discover(client):
